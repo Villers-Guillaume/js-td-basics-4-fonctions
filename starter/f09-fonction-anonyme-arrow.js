@@ -21,6 +21,9 @@
 // Fonction anonyme avec la syntaxe "fat arrow function"
 
 // Utilisation de la fonction pour saluer Thomas dans la console
+saluer=(prenom) => console.log(`Bonjour ${prenom}`);
+saluer("Thomas");
+
 
 
 

@@ -13,7 +13,32 @@ Aide : votre fonction s'exécute avec le pattern suivant : calculer(nb1, "+", nb
 */
 
 // Déclaration de la fonction calculer
-
+function calculer(a,signe,b) {
+    switch (signe) {
+        case "+":
+            let somme = a + b;
+            console.log(`${a} + ${b} = ${somme}`);
+            break;
+        case "-":
+            let resulat = a - b;
+            console.log(`${a} - ${b} = ${resulat}`);
+            break;
+        case "*":
+            let produit = a * b;
+            console.log(`${a} * ${b} = ${produit}`);
+            break;
+        case "/":
+            let quotient = a / b;
+            console.log(`${a} / ${b} = ${quotient}`);
+            break;
+        default:
+            console.log("Erreur sur le signe donné");
+            break;
+    }
+}
 
 // Utilisation de la fonction calculer
-
+console.log(calculer(4,"+",6));
+console.log(calculer(4,"-",6));
+console.log(calculer(2,"*",0));
+console.log(calculer(12, "/", 0));

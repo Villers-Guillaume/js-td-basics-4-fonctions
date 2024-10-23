@@ -29,7 +29,12 @@ Utiliser la fonction Math.random pour afficher dans la console
 */
 
 console.log(Math.random()); // Un nombre aléatoire entre 0 et 1
+function getRandomInt(min, max) {
+    return Math.random() * (max - min) + min;
+}
 
+console.log(getRandomInt(0,10));
+console.log(getRandomInt(5,15));
 // Nous découvrirons plein d'autres fonctions prédéfinies dans la suite de ce cours.
 
 // 2°) Consulter la documentation !!
